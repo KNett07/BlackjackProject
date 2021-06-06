@@ -22,16 +22,17 @@ public class Deck {
 		return deck;
 	}
 	
-	public int checkDeckSize() {
+	public int cardsLeftInDeck() {
 		return cards.size();
 	}
 	
-	public void shuffle() {
-		Collections.shuffle(cards);
-	}
 	
 	public Card dealCard() {
 		return cards.remove(0);
 	}
+	
 
+	public void shuffle() {
+		Collections.shuffle(cards);
+	}
 }

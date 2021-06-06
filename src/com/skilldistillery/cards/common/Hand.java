@@ -28,13 +28,17 @@ public class Hand {
 	
 	public void displayHand() {
 		if(cards.size() == 0) {
-			System.out.println("nocards.");
+			System.out.println("No cards.");
 		} else {
 			for (Card card : cards) {
 				System.out.println(card);
 				
 			}
 		}
+	}
+	
+	public String toString() {
+		return null;
 	}
 
 }
