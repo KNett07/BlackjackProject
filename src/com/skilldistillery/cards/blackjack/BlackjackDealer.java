@@ -6,10 +6,9 @@ import com.skilldistillery.cards.common.Hand;
 import com.skilldistillery.cards.common.Player;
 
 public class BlackjackDealer extends Player {
-	
 
 	private Deck dealerDeck = new Deck();
-	
+
 	public BlackjackDealer() {
 		shuffleDeck();
 	}
@@ -38,13 +37,9 @@ public class BlackjackDealer extends Player {
 	public int calculateTotal() {
 		return hand.getHandValue();
 	}
-	
+
 	public Hand getHand() {
 		return this.hand;
 	}
 
-//	public String showHand() {
-//		for(int i = 0; i < hand.size();i++)
-//		return hand.toString();
-//	}
 }
