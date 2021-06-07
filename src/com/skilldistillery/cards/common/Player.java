@@ -2,9 +2,18 @@ package com.skilldistillery.cards.common;
 
 public abstract class Player {
 
-//	TODO draw a card, hand
-//	TODO get total of cards
-	
-	
-	
+	protected Hand hand = new Hand();
+
+	public void addCard(Card card) {
+		hand.addCard(card);
+	}
+
+	public int calculateTotal() {
+		return hand.getHandValue();
+	}
+
+	public void clearHand() {
+		hand.clearHand();
+	}
+
 }

@@ -4,41 +4,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Hand {
-	
-	private List<Card> cards = new ArrayList<>();
-	
+
+	protected List<Card> cards = new ArrayList<>();
+
 	public void addCard(Card card) {
-		cards.add(card);	
-		
+		cards.add(card);
+
 	}
-	
+
 	public int getHandValue() {
 		int value = 0;
-		for(Card card : cards) {
-			value += card.getValue()
-;		}
-		
+		for (Card card : cards) {
+			value += card.getValue();
+		}
+
 		return value;
 	}
-	
+
 	public void fold() {
 		cards.clear();
-		
+
 	}
-	
-	public void displayHand() {
-		if(cards.size() == 0) {
-			System.out.println("No cards.");
-		} else {
-			for (Card card : cards) {
-				System.out.println(card);
-				
-			}
-		}
+
+	public void clearHand() {
+		 int handValue = 0;
 	}
-	
+
+	@Override
 	public String toString() {
-		return null;
+		return "Hand = " + cards + "]";
 	}
 
 }
