@@ -11,6 +11,10 @@ public class Hand {
 		cards.add(card);
 
 	}
+	public Card returnCard(int index) {
+		
+		return cards.get(index);
+	}
 
 	public int getHandValue() {
 		int value = 0;
@@ -25,6 +29,9 @@ public class Hand {
 		cards.clear();
 
 	}
+	public int numCards() {
+		return cards.size();
+	}
 
 	public void clearHand() {
 		 int handValue = 0;
@@ -32,7 +39,7 @@ public class Hand {
 
 	@Override
 	public String toString() {
-		return "Hand = " + cards + "]";
+		return "\t Hand includes = " + cards + "] ";
 	}
 
 }

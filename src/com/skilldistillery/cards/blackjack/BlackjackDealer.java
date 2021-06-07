@@ -6,8 +6,13 @@ import com.skilldistillery.cards.common.Hand;
 import com.skilldistillery.cards.common.Player;
 
 public class BlackjackDealer extends Player {
+	
 
 	private Deck dealerDeck = new Deck();
+	
+	public BlackjackDealer() {
+		shuffleDeck();
+	}
 
 	public void shuffleDeck() {
 		dealerDeck.shuffle();
@@ -19,7 +24,7 @@ public class BlackjackDealer extends Player {
 	}
 
 	public void lookAtHand() {
-		System.out.println("Dealer: " + hand.toString());
+		System.out.println(" Dealer: " + hand.toString());
 	}
 
 	public void handAtDeal() {
@@ -33,8 +38,13 @@ public class BlackjackDealer extends Player {
 	public int calculateTotal() {
 		return hand.getHandValue();
 	}
-
-	public String showHand() {
-		return hand.toString();
+	
+	public Hand getHand() {
+		return this.hand;
 	}
+
+//	public String showHand() {
+//		for(int i = 0; i < hand.size();i++)
+//		return hand.toString();
+//	}
 }

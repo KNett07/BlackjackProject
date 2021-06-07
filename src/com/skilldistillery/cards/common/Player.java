@@ -15,5 +15,9 @@ public abstract class Player {
 	public void clearHand() {
 		hand.clearHand();
 	}
+	
+	public Hand getHand() {
+		return this.hand;
+	}
 
 }

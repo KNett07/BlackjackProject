@@ -1,6 +1,7 @@
 package com.skilldistillery.cards.blackjack;
 
 import com.skilldistillery.cards.common.Card;
+import com.skilldistillery.cards.common.Hand;
 import com.skilldistillery.cards.common.Player;
 
 public class BlackjackPlayer extends Player{
@@ -32,6 +33,10 @@ public class BlackjackPlayer extends Player{
 		} else {
 			return false;
 		}
+	}
+	
+	public Hand getHand() {
+		return this.hand;
 	}
 	
 	public String showHand() {
